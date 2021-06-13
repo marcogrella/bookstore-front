@@ -5,8 +5,9 @@
 
 .sidenav {
   background-color: rgba(95, 95, 95);
-  text-decoration-color: white;
+
 }
+
 
 i {
   padding-right: 9.6px;
@@ -14,12 +15,9 @@ i {
 
  }
 
- a {
-   text-decoration-color: white;
- }
-
  span {
   color: white;
+  font-weight: 500;
  }
 
  .content {
