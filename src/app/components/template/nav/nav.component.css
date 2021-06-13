@@ -1,0 +1,27 @@
+.container {
+  height: 85%;
+  background-color: rgb(48, 48, 48);
+}
+
+.sidenav {
+  background-color: rgba(95, 95, 95);
+  text-decoration-color: white;
+}
+
+i {
+  padding-right: 9.6px;
+  color: white;
+
+ }
+
+ a {
+   text-decoration-color: white;
+ }
+
+ span {
+  color: white;
+ }
+
+ .content {
+  background-color: rgb(48, 48, 48);
+ }
