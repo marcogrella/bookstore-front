@@ -1,6 +1,7 @@
 import { CategoriaService } from './../categoria.service';
 import { Component, OnInit } from '@angular/core';
 import { Categoria } from '../categoria.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-categoria-read',
@@ -15,7 +16,7 @@ export class CategoriaReadComponent implements OnInit {
 
 
   /* toda a vez que essa classe for chamada irá instanciar um service de categoria*/
-  constructor(private service:CategoriaService) { }
+  constructor(private service:CategoriaService, private router: Router) { }
 
   /* já chama o método ao instanciar a classe */
   ngOnInit(): void {
@@ -24,12 +25,14 @@ export class CategoriaReadComponent implements OnInit {
 
   /* esse método chama o serviço que tem o método findAll */
   findAll(){
-
     /* a resposta é recebida colocada dentro do array vazio (categorias). Esse é o dataSource chamado na página html.  */
     this.service.findAll().subscribe(resposta => {
       this.categorias = resposta;
     })
   }
 
+  navegarParaCategoriaCreate(){
+      this.router.navigate(["categorias/create"])
+  }
 
 }
