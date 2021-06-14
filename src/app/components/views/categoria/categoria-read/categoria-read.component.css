@@ -12,16 +12,49 @@
 .title h1{
   color:rgb(218, 218, 218);
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .table{
   width: 100%;
   background-color: rgb(95, 95, 95);
+
+}
+
+button {
+  margin-bottom: 12.8px;
+
 }
 
 th {
   color:white;
-  font-weight: 400;
+  font-weight: 500;
+
+}
+
+td {
+  color:white;
+  font-weight: 300;
+}
+
+
+.livros{
+  margin-left: 6px;
+  color: rgb(0, 110, 255);
+}
+
+.edit {
+  color: rgb(206,173,24);
+}
+
+
+
+.delete {
+  color: rgb(211, 59, 54);
+  margin-left: 8px;
+}
+
+.mat-header{
+  width: 80px;
 }
 
