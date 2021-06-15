@@ -37,9 +37,7 @@ textarea{
 }
 
 
-
-
-::ng-deep .botao-criar span.mat-button-wrapper  {
+::ng-deep .botao-deletar span.mat-button-wrapper  {
   color: whitesmoke;
 
 }
