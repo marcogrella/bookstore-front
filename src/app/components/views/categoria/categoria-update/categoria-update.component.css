@@ -1,0 +1,76 @@
+form {
+  text-align: center;
+  width: 70%;
+  margin: 32px auto 0 auto;
+  font-size: 18px;
+
+}
+
+
+h1{
+  color: white;
+  font-size: 32px;
+  margin-bottom: 48px;
+  font-weight: 500;
+}
+
+.form {
+  width: 100%;
+
+}
+
+.mat-input-element{
+  color: white;
+}
+
+input {
+  color: white;
+}
+
+mat-label{
+  color: white;
+}
+
+textarea::placeholder{
+  color: rgb(182, 182, 182);
+}
+
+textarea{
+  color: white;
+}
+
+input::placeholder{
+  color: rgb(182, 182, 182);
+}
+
+::ng-deep .botao-atualizar span.mat-button-wrapper  {
+  color: whitesmoke;
+
+}
+
+
+.buttons{
+  text-align: left;
+}
+
+button{
+  margin-right: 8px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: white !important;
+ }
+
+ ::ng-deep.mat-form-field-underline {
+  /*change color of underline*/
+  background-color: rgb(182, 182, 182) !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+ /*change color of underline when focused*/
+ background-color: white !important;
+}
+
