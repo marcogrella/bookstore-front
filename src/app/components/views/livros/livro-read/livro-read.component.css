@@ -1,0 +1,39 @@
+form {
+  width: 95%;
+  margin: auto;
+}
+
+button{
+  margin-top: 8px;
+  margin-left: 1rem;
+  color: white
+
+}
+
+.home {
+  background-color: rgba(95, 95, 95);
+  width: 95%;
+  margin: 1rem;
+}
+
+.title{
+  color: white;
+  text-align: center;
+}
+
+.subtitle{
+  color: white;
+  text-align: center;
+}
+
+@media(max-width: 450px){
+  .home{
+    width: 70%;
+  }
+}
+
+@media(max-width: 770px){
+  .home{
+    width: 90%;
+  }
+}
