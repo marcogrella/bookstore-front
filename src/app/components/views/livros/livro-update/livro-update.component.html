@@ -1,0 +1,31 @@
+<form>
+  <h1>ATUALIZANDO UM LIVRO</h1>
+
+  <mat-form-field class="form">
+    <mat-label>Título</mat-label>
+    <input matInput [(ngModel)]="livro.titulo" [formControl]="titulo" required type="text" name="titulo" placeholder="Exemplo: Programação com Angular" maxlength="100">
+    <mat-error *ngIf="titulo.invalid">{{ getMessage() }}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Nome do Autor</mat-label>
+    <input matInput [(ngModel)]="livro.nome_autor" [formControl]="nome_autor" required type="text" name="nome_autor" placeholder="Exemplo: Carlos Chagas" maxlength="100">
+    <mat-error *ngIf="nome_autor.invalid">{{ getMessage() }}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Texto</mat-label>
+    <textarea matInput [(ngModel)]="livro.texto" [formControl]="texto" required type="text" name="texto" placeholder="Exemplo: Lorem Ipsum" maxlength="200000"></textarea>
+    <mat-error *ngIf="texto.invalid">{{ getMessage() }}</mat-error>
+
+  </mat-form-field>
+
+  <div class="buttons">
+      <span class="botao-atualizar">
+        <button (click)="update()" [disabled]="getMessage()" class="mat-elevation-z8" mat-stroked-button>ATUALIZAR</button>
+      </span>
+      <span class="botao-cancelar">
+        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
+      </span>
+  </div>
+</form>
