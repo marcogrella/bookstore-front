@@ -46,7 +46,7 @@ export class LivroDeleteComponent implements OnInit {
    this.service.mensagem("Livro excluído com sucesso!")
    }, err => {
     this.router.navigate([`categorias/${this.id_cat}/livros`]);
-    this.service.mensagem("Erro ao excluir livro sucesso!")
+    this.service.mensagem("Erro ao excluir livro!")
    })
  }
 
