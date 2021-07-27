@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy:ghdocs": "ng build --prod --output-path docs --base-href /bookstore-front/"
+    "deploy:ghdocs": "ng build --output-path docs --base-href /bookstore-front/"
   },
   "private": true,
   "dependencies": {
